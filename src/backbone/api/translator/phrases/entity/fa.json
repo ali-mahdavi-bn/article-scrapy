@@ -1,0 +1,16 @@
+{
+  "Organization": "سازمان",
+  "OrganizationDepartment": "دپارتمان",
+  "OrganizationChart": "چارت سازمانی",
+  "OrganizationChartNode": "نود",
+  "Chart": "چارت",
+  "Year": "سال",
+  "Period": "دوره",
+  "Attendance": "حضور غیاب",
+  "Structure": "ساختار",
+  "Code": "کد",
+  "CodeCategory": "دسته بندی کد",
+  "OrganizationJob": "نقش",
+  "flow": "قانون",
+  "OrganizationRoleType": "رده سازمانی"
+}

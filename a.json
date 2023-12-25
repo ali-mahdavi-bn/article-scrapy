@@ -1,0 +1,498 @@
+{
+  "userInfo": {
+    "institute": false,
+    "member": false,
+    "individual": false,
+    "guest": false,
+    "subscribedContent": false,
+    "fileCabinetContent": false,
+    "fileCabinetUser": false,
+    "institutionalFileCabinetUser": false,
+    "showPatentCitations": true,
+    "showGet802Link": false,
+    "showOpenUrlLink": false,
+    "tracked": false,
+    "delegatedAdmin": false,
+    "desktop": false,
+    "isInstitutionDashboardEnabled": false,
+    "isInstitutionProfileEnabled": false,
+    "isRoamingEnabled": false,
+    "isDelegatedAdmin": false,
+    "isMdl": false,
+    "isCwg": false,
+    "isAcademic": false,
+    "isIel": false
+  },
+  "authors": [
+    {
+      "name": "Sebastian K. Boell",
+      "affiliation": [
+        "The University of Sydney, NSW, Australia"
+      ],
+      "bio": {
+        "p": [
+          "Sebastian K. Boell is a researcher in information systems, University of Sydney, NSW, 2006, Australia. His research interests include long-term effects, consequences, and implications of information and communication technologies (ICT) on organizations and organizing. Contact him at sebastian.boell@sydney.edu.au."
+        ]
+      },
+      "firstName": "Sebastian K.",
+      "lastName": "Boell",
+      "orcid": "0000-0002-4013-7066",
+      "id": "37085551870"
+    },
+    {
+      "name": "Janet M. Toland",
+      "affiliation": [
+        "Te Herenga Waka, Victoria University of Wellington, Wellington, New Zealand"
+      ],
+      "bio": {
+        "p": [
+          "Janet M. Toland is an associate professor in information systems with Te Herenga Waka, Victoria University of Wellington, Wellington, 6140, New Zealand. Her research interests include the history of information systems with a focus on social and ethical issues. Contact her at janet.toland@vuw.ac.nz."
+        ]
+      },
+      "firstName": "Janet M.",
+      "lastName": "Toland",
+      "orcid": "0000-0001-7387-7880",
+      "id": "38139588300"
+    }
+  ],
+  "issn": [
+    {
+      "format": "Print ISSN",
+      "value": "1058-6180"
+    },
+    {
+      "format": "Electronic ISSN",
+      "value": "1934-1547"
+    }
+  ],
+  "articleNumber": "10333123",
+  "dbTime": "2 ms",
+  "metrics": {
+    "wosCitationCount": 0,
+    "citationCountPaper": 0,
+    "citationCountPatent": 0,
+    "totalDownloads": 14
+  },
+  "purchaseOptions": {
+    "showOtherFormatPricingTab": false,
+    "showPdfFormatPricingTab": true,
+    "pdfPricingInfoAvailable": false,
+    "otherPricingInfoAvailable": false,
+    "mandatoryBundle": false,
+    "optionalBundle": false,
+    "displayTextWhenPdfPricingNotAvailable": "The purchase and pricing options for this item are unavailable. Select items are only available as part of a subscription package. You may try again later or <a href='https://ieeexplore.ieee.org/xpl/contact' target='_blank'>contact us</a> for more information.",
+    "displayTextWhenOtherFormatPricingNotAvailable": "The purchase and pricing options for this item are unavailable. Select items are only available as part of a subscription package. You may try again later or <a href='https://ieeexplore.ieee.org/xpl/contact' target='_blank'>contact us</a> for more information."
+  },
+  "getProgramTermsAccepted": false,
+  "sections": {
+    "abstract": "true",
+    "authors": "true",
+    "figures": "false",
+    "multimedia": "false",
+    "references": "true",
+    "citedby": "false",
+    "keywords": "true",
+    "definitions": "false",
+    "algorithm": "false",
+    "dataset": "false",
+    "cadmore": "false",
+    "footnotes": "true",
+    "disclaimer": "false",
+    "relatedContent": "false",
+    "metrics": "true"
+  },
+  "pubLink": "/xpl/RecentIssue.jsp?punumber=85",
+  "issueLink": "/xpl/tocresult.jsp?isnumber=10332940&punumber=85",
+  "displayPublicationDate": "29 November 2023",
+  "abstract": "This special issue explores the histories of computing in the countries of Oceania with reference to the nuanced relationship between the local and the global. Oceania includes Australia, Federated States of Micronesia, Fiji, Kiribati, Marshall Islands, Nauru, New Zealand, Palau, Papua New Guinea, Samoa, Solomon Islands, Tonga, Tuvalu, and Vanuatu [5]. The region comprises indigenous Polynesian, Melanesian, and Micronesian cultures alongside more recent colonial influences. There is notable cultural and linguistic diversity throughout, for example, in Vanuatu alone, more than 100 different languages are spoken [11]. The inhabitants of Oceania have a strong connection with the Pacific Ocean, though many of the countries in the region are tiny island states, their exclusive economic zones include large expanses of ocean territory and associated fishing rights [16]. While Pacific Islanders regard themselves as guardians of their ocean territory, rising sea levels caused by climate change pose a serious threat, especially to the lower lying islands. In terms of global geography, Oceania is often regarded as peripheral, its countries have small populations and economies that are often heavily dependent on raw materials. This peripheral location and the region's colonial heritage influenced attitudes toward the arrival of computing technology.",
+  "pdfPath": "/iel7/85/10332940/10333123.pdf",
+  "doiLink": "https://doi.org/10.1109/MAHC.2023.3324242",
+  "articleCopyRight": "2023 IEEE",
+  "formulaStrippedArticleTitle": "Histories of Computing in Oceania",
+  "displayPublicationTitle": "IEEE Annals of the History of Computing",
+  "publicationDate": "Oct.-Dec. 2023",
+  "doi": "10.1109/MAHC.2023.3324242",
+  "publicationYear": "2023",
+  "publicationTitle": "IEEE Annals of the History of Computing",
+  "startPage": "6",
+  "endPage": "10",
+  "pdfUrl": "/stamp/stamp.jsp?tp=&arnumber=10333123",
+  "keywords": [
+    {
+      "type": "IEEE Keywords",
+      "kwd": [
+        "Special issues and sections",
+        "History",
+        "Museums",
+        "Computer industry"
+      ]
+    }
+  ],
+  "rightsLink": "http://s100.copyright.com/AppDispatchServlet?publisherName=ieee&publication=85&title=Histories+of+Computing+in+Oceania&isbn=&publicationDate=Oct.-Dec.+2023&author=Sebastian+K.+Boell&ContentID=10.1109/MAHC.2023.3324242&orderBeanReset=true&startPage=6&endPage=10&vvolumeolumeNum=45&issueNum=4",
+  "authorNames": "Sebastian K. Boell;Janet M. Toland",
+  "allowComments": false,
+  "dateOfInsertion": "29 November 2023",
+  "isGetAddressInfoCaptured": false,
+  "isMarketingOptIn": false,
+  "pubTopics": [
+    {
+      "name": "Computing and Processing"
+    },
+    {
+      "name": "General Topics for Engineers"
+    }
+  ],
+  "publisher": "IEEE",
+  "persistentLink": "https://ieeexplore.ieee.org/servlet/opac?punumber=85",
+  "htmlLink": "/document/10333123/",
+  "htmlAbstractLink": "/document/10333123/",
+  "isStandard": false,
+  "displayDocTitle": "Histories of Computing in Oceania",
+  "isEarlyAccess": false,
+  "isOpenAccess": false,
+  "isEphemera": true,
+  "xploreDocumentType": "Journals & Magazine",
+  "isBook": false,
+  "isChapter": false,
+  "isProduct": false,
+  "isBookWithoutChapters": false,
+  "isConference": false,
+  "volume": "45",
+  "issue": "4",
+  "isSpringer": false,
+  "isJournal": true,
+  "isSMPTE": false,
+  "isOUP": false,
+  "isSAE": false,
+  "isNow": false,
+  "isCustomDenial": false,
+  "isPromo": false,
+  "isDynamicHtml": true,
+  "isFreeDocument": true,
+  "startPage": "6",
+  "fundingAgencies": {
+    "fundingAgency": [
+      {
+        "fundingName": "University of Sydney Business School"
+      }
+    ]
+  },
+  "articleCopyRight": "2023 IEEE",
+  "openAccessFlag": "F",
+  "insertDate": "29 November 2023",
+  "ephemeraFlag": "true",
+  "title": "Histories of Computing in Oceania",
+  "html_flag": "false",
+  "ml_html_flag": "true",
+  "sourcePdf": "mahc-editorial-3324242-x.pdf",
+  "displayPublicationDate": "29 November 2023",
+  "mlTime": "PT0.037184S",
+  "xplore-pub-id": "85",
+  "pdfPath": "/iel7/85/10332940/10333123.pdf",
+  "sponsors": [
+    {
+      "name": "IEEE Computer Society",
+      "url": "http://computer.org/"
+    }
+  ],
+  "isNumber": "10332940",
+  "rightsLinkFlag": "1",
+  "contentType": "periodicals",
+  "publicationDate": "Oct.-Dec. 2023",
+  "publicationNumber": "85",
+  "citationCount": "0",
+  "xplore-issue": "10332940",
+  "issue": "4",
+  "articleId": "10333123",
+  "publicationTitle": "IEEE Annals of the History of Computing",
+  "sections": {
+    "abstract": "true",
+    "authors": "true",
+    "figures": "false",
+    "multimedia": "false",
+    "references": "true",
+    "citedby": "false",
+    "keywords": "true",
+    "definitions": "false",
+    "algorithm": "false",
+    "dataset": "false",
+    "cadmore": "false",
+    "footnotes": "true",
+    "disclaimer": "false",
+    "relatedContent": "false",
+    "metrics": "true"
+  },
+  "volume": "45",
+  "contentTypeDisplay": "Magazines",
+  "publicationYear": "2023",
+  "subType": "IEEE Magazine",
+  "_value": "IEEE",
+  "lastupdate": "2023-12-10",
+  "mediaPath": "/mediastore_new/IEEE/content/media/85/10332940/10333123",
+  "endPage": "10",
+  "displayPublicationTitle": "IEEE Annals of the History of Computing",
+  "doi": "10.1109/MAHC.2023.3324242"
+}
+
+
+
+{
+  "userInfo": {
+    "institute": false,
+    "member": false,
+    "individual": false,
+    "guest": false,
+    "subscribedContent": false,
+    "fileCabinetContent": false,
+    "fileCabinetUser": false,
+    "institutionalFileCabinetUser": false,
+    "showPatentCitations": true,
+    "showGet802Link": false,
+    "showOpenUrlLink": false,
+    "tracked": false,
+    "delegatedAdmin": false,
+    "desktop": false,
+    "isInstitutionDashboardEnabled": false,
+    "isInstitutionProfileEnabled": false,
+    "isRoamingEnabled": false,
+    "isDelegatedAdmin": false,
+    "isMdl": false,
+    "isCwg": false,
+    "isAcademic": false,
+    "isIel": false
+  },
+  "authors": [
+    {
+      "name": "Dalei Wu",
+      "affiliation": [
+        "Department of Electrical and Computer Engineering, Concordia University, Montreal, QUE, Canada"
+      ],
+      "firstName": "Dalei",
+      "lastName": "Wu",
+      "id": "38469039000"
+    },
+    {
+      "name": "Wei-Ping Zhu",
+      "affiliation": [
+        "Department of Electrical and Computer Engineering, Concordia University, Montreal, QUE, Canada"
+      ],
+      "firstName": "Wei-Ping",
+      "lastName": "Zhu",
+      "id": "37275886700"
+    },
+    {
+      "name": "M.N.S. Swamy",
+      "affiliation": [
+        "Department of Electrical and Computer Engineering, Concordia University, Montreal, QUE, Canada"
+      ],
+      "firstName": "M.N.S.",
+      "lastName": "Swamy",
+      "id": "37274448600"
+    }
+  ],
+  "isbn": [
+    {
+      "format": "Electronic ISBN",
+      "value": "978-1-4673-2527-1",
+      "isbnType": ""
+    },
+    {
+      "format": "Print ISBN",
+      "value": "978-1-4673-2526-4",
+      "isbnType": ""
+    },
+    {
+      "format": "Online ISBN",
+      "value": "978-1-4673-2525-7",
+      "isbnType": ""
+    }
+  ],
+  "issn": [
+    {
+      "format": "Electronic ISSN",
+      "value": "1558-3899"
+    },
+    {
+      "format": "Print ISSN",
+      "value": "1548-3746"
+    },
+    {
+      "format": "Online ISSN",
+      "value": "1548-3746"
+    }
+  ],
+  "articleNumber": "6292178",
+  "dbTime": "9 ms",
+  "metrics": {
+    "wosCitationCount": 0,
+    "citationCountPaper": 4,
+    "citationCountPatent": 0,
+    "totalDownloads": 174
+  },
+  "purchaseOptions": {
+    "showOtherFormatPricingTab": false,
+    "showPdfFormatPricingTab": true,
+    "pdfPricingInfoAvailable": true,
+    "otherPricingInfoAvailable": false,
+    "mandatoryBundle": false,
+    "optionalBundle": false,
+    "displayTextWhenOtherFormatPricingNotAvailable": "The purchase and pricing options for this item are unavailable. Select items are only available as part of a subscription package. You may try again later or <a href='https://ieeexplore.ieee.org/xpl/contact' target='_blank'>contact us</a> for more information.",
+    "pdfPricingInfo": [
+      {
+        "memberPrice": "$14.95",
+        "nonMemberPrice": "$33.00",
+        "partNumber": "6292178",
+        "type": "PDF/HTML"
+      }
+    ]
+  },
+  "getProgramTermsAccepted": false,
+  "sections": {
+    "abstract": "true",
+    "authors": "true",
+    "figures": "true",
+    "multimedia": "false",
+    "references": "true",
+    "citedby": "true",
+    "keywords": "true",
+    "definitions": "false",
+    "algorithm": "false",
+    "dataset": "false",
+    "cadmore": "false",
+    "footnotes": "false",
+    "disclaimer": "false",
+    "relatedContent": "false",
+    "metrics": "true"
+  },
+  "pubLink": "/xpl/conhome/6276898/proceeding",
+  "issueLink": "/xpl/tocresult.jsp?isnumber=6291930&punumber=6276898",
+  "displayPublicationDate": "05-08 August 2012",
+  "abstract": "The conventional soft-decision based noise estimation algorithms normally assume that noise exists, only when speech is absent. Consequently, the estimated noise spectra are not updated in the segments of speech presence, but only in those of speech absence. This assumption often results in several problems such as delay and bias of noise spectrum estimates. In this paper, we propose a solution by using speech enhancement residue (SER) to compensate the estimation bias in the presence of speech. The proposed method can be naturally combined with the improved minimum controlled averaging (IMCRA) method to consistently update noise spectra. The experimental results show that the SER-based IMCRA can reduce the relative segmental estimation errors for various types of noise at different SNR levels, especially for car internal noise.",
+  "pdfPath": "/iel5/6276898/6291930/06292178.pdf",
+  "doiLink": "https://doi.org/10.1109/MWSCAS.2012.6292178",
+  "articleCopyRight": "2012 IEEE",
+  "formulaStrippedArticleTitle": "Noise spectrum estimation with improved minimum controlled recursive averaging based on speech enhancement residue",
+  "displayPublicationTitle": "2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)",
+  "publicationDate": "August 2012",
+  "doi": "10.1109/MWSCAS.2012.6292178",
+  "publicationYear": "2012",
+  "publicationTitle": "2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)",
+  "startPage": "948",
+  "endPage": "951",
+  "pdfUrl": "/stamp/stamp.jsp?tp=&arnumber=6292178",
+  "keywords": [
+    {
+      "type": "IEEE Keywords",
+      "kwd": [
+        "Speech",
+        "Noise measurement",
+        "Speech enhancement",
+        "Signal to noise ratio",
+        "Spectral analysis",
+        "Estimation"
+      ]
+    }
+  ],
+  "rightsLink": "http://s100.copyright.com/AppDispatchServlet?publisherName=ieee&publication=proceedings&title=Noise+spectrum+estimation+with+improved+minimum+controlled+recursive+averaging+based+on+speech+enhancement+residue&isbn=978-1-4673-2526-4&publicationDate=August+2012&author=Dalei+Wu&ContentID=10.1109/MWSCAS.2012.6292178&orderBeanReset=true&startPage=948&endPage=951&proceedingName=2012+IEEE+55th+International+Midwest+Symposium+on+Circuits+and+Systems+%28MWSCAS%29",
+  "authorNames": "Dalei Wu;Wei-Ping Zhu;M.N.S. Swamy",
+  "allowComments": false,
+  "dateOfInsertion": "03 September 2012",
+  "isGetAddressInfoCaptured": false,
+  "isMarketingOptIn": false,
+  "pubTopics": [
+    {
+      "name": "Components, Circuits, Devices and Systems"
+    },
+    {
+      "name": "Signal Processing and Analysis"
+    },
+    {
+      "name": "Communication, Networking and Broadcast Technologies"
+    },
+    {
+      "name": "Computing and Processing"
+    },
+    {
+      "name": "Fields, Waves and Electromagnetics"
+    }
+  ],
+  "publisher": "IEEE",
+  "persistentLink": "https://ieeexplore.ieee.org/servlet/opac?punumber=6276898",
+  "htmlLink": "/document/6292178/",
+  "htmlAbstractLink": "/document/6292178/",
+  "isStandard": false,
+  "displayDocTitle": "Noise spectrum estimation with improved minimum controlled recursive averaging based on speech enhancement residue",
+  "isEarlyAccess": false,
+  "isOpenAccess": false,
+  "isEphemera": false,
+  "xploreDocumentType": "Conference Publication",
+  "isBook": false,
+  "isChapter": false,
+  "isProduct": false,
+  "isBookWithoutChapters": false,
+  "isConference": true,
+  "isSpringer": false,
+  "isJournal": false,
+  "isSMPTE": false,
+  "isOUP": false,
+  "isSAE": false,
+  "isNow": false,
+  "isCustomDenial": false,
+  "isPromo": false,
+  "isDynamicHtml": true,
+  "isFreeDocument": false,
+  "accessionNumber": "12978900",
+  "startPage": "948",
+  "articleCopyRight": "2012 IEEE",
+  "openAccessFlag": "F",
+  "insertDate": "03 September 2012",
+  "ephemeraFlag": "false",
+  "title": "Noise spectrum estimation with improved minimum controlled recursive averaging based on speech enhancement residue",
+  "confLoc": "Boise, ID, USA",
+  "accessionNumber": "12978900",
+  "html_flag": "true",
+  "ml_html_flag": "true",
+  "sourcePdf": "2376208.pdf",
+  "displayPublicationDate": "05-08 August 2012",
+  "mlTime": "PT0.040653S",
+  "xplore-pub-id": "6276898",
+  "pdfPath": "/iel5/6276898/6291930/06292178.pdf",
+  "isNumber": "6291930",
+  "rightsLinkFlag": "1",
+  "contentType": "conferences",
+  "publicationDate": "August 2012",
+  "publicationNumber": "6276898",
+  "citationCount": "4",
+  "xplore-issue": "6291930",
+  "articleId": "6292178",
+  "publicationTitle": "2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)",
+  "sections": {
+    "abstract": "true",
+    "authors": "true",
+    "figures": "true",
+    "multimedia": "false",
+    "references": "true",
+    "citedby": "true",
+    "keywords": "true",
+    "definitions": "false",
+    "algorithm": "false",
+    "dataset": "false",
+    "cadmore": "false",
+    "footnotes": "false",
+    "disclaimer": "false",
+    "relatedContent": "false",
+    "metrics": "true"
+  },
+  "contentTypeDisplay": "Conferences",
+  "publicationYear": "2012",
+  "subType": "IEEE Conference",
+  "_value": "IEEE",
+  "lastupdate": "2023-12-09",
+  "mediaPath": "/mediastore_new/IEEE/content/media/6276898/6291930/6292178",
+  "endPage": "951",
+  "displayPublicationTitle": "2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)",
+  "doi": "10.1109/MWSCAS.2012.6292178"
+}
+
+
+

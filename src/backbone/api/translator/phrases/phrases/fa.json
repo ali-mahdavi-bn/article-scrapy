@@ -1,0 +1,16 @@
+{
+  "created_successfully": ".{entity} با موفقیت ایجاد شد",
+  "uploaded_successfully": "با موفقیت آپلود شد.",
+  "synced_successfully": "با موفقیت همگام سازی شد.",
+  "updated_successfully": ".{entity} با موفقیت بروزرسانی شد",
+  "imported_successfully": "با موفقیت بارگزاری شد.",
+  "deleted_successfully": ".{entity} با موفقیت حذف شد",
+  "submitted_successfully": "با موفقیت ثبت شد.",
+  "request_registered_successfully": "درخواست شما با موفقیت ثبت شد",
+
+  "PASSWORD.MIN_LENGTH": "رمز عبور باید حداقل {n} رقم باشد",
+  "PASSWORD.UPPERCASE_REQUIRED": "باید حداقل از یک حروف بزرگ استفاده شود.",
+  "PASSWORD.LOWERCASE_REQUIRED": "باید حداقل از یک حرف کوچک استفاده شود.",
+  "PASSWORD.DIGIT_REQUIRED": "باید حداقل از یک عدد استفاده شود.",
+  "PASSWORD.SPECIAL_CHARACTERS_REQUIRED": "باید حدافل از یک علامت !@#$%^&*() استفاده شود."
+}
