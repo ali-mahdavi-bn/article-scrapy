@@ -4,7 +4,6 @@ from types import NoneType
 from typing import Dict, Type, Any, Callable, List
 
 from dateutil.parser import parse
-from fastapi import FastAPI
 
 
 def remove_none_from_dict(dictionary: dict, remove_empty_string=False):
@@ -41,13 +40,6 @@ def collect_handlers_functions(module) -> Dict[Any, Callable | List[Callable]]:
 
     return functions
 
-
-def install_module(app: FastAPI, module):
-    for name, c in getmembers(module):
-        if name == "start_mapper":
-            c()
-        if name.startswith("router"):
-            app.include_router(c)
 
 
 def any_to_datetime(date_or_datetime):

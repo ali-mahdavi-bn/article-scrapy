@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-from backbone.api.translator.translator import translate
 from backbone.exception.logical_validation_exeption.exeptions import LogicalValidationException
 
 

@@ -7,7 +7,6 @@ from typing import Any, List, Optional
 
 from pydantic import BaseModel, PositiveInt
 
-from backbone.api.translator.translator import translate
 from backbone.helpers.validation import PhoneNumberValidator, PostalCodeValidator
 
 
@@ -16,19 +15,8 @@ class BaseEnumeration(Enum):
     def members(cls) -> List[BaseEnumeration]:
         return [item[1] for item in cls.__members__.items()]
 
-    @classmethod
-    def translated_members(cls, lang: str = "fa") -> List[tuple]:
-        members = []
-        for item in cls.__members__.items():
-            members.append((translate(item[0], dictionary_type="enumeration", lang=lang), item[1]))
-        return members
 
-    @classmethod
-    def translate_member(cls, item: BaseEnumeration, lang: str = "fa") -> List[tuple]:
-        return translate(item.name, dictionary_type="enumeration", lang=lang)
 
-    def translate(self, lang: str = "fa") -> str:
-        return translate(self.name, dictionary_type="enumeration", lang=lang)
 
     @classmethod
     def find_by_value(cls, value) -> BaseEnumeration:

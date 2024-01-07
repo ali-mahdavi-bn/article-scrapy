@@ -2,14 +2,14 @@ from __future__ import annotations
 
 from backbone.infrastructure.databases.postgres_connection import DEFAULT_SESSION_FACTORY
 from backbone.service_layer.abstract_unit_of_work import AbstractUnitOfWork
-from ieee.adapter import repositories as ieee_repo
+from articles.adapter import repositories as ieee_repo
 
 
 class UnitOfWork(AbstractUnitOfWork):
     def __init__(self, postgres_session_factory=DEFAULT_SESSION_FACTORY):
         self.session_factory = postgres_session_factory
 
-    def __enter__(self):
+    def __enter__(self) -> 'UnitOfWork':
         self.session = self.session_factory(expire_on_commit=False)  # type: Session
         self.article = ieee_repo.ArticleRepository(self.session)
         self.author = ieee_repo.AuthorRepository(self.session)

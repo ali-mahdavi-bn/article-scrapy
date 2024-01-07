@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from sqlalchemy import Column, Integer, String
 
-from backbone.infrastructure.postgres_connection import BaseEntity
+from backbone.adapter.abstract_entity import BaseEntity
 
 
 class Enumeration(BaseEntity):

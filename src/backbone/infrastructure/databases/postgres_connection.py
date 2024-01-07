@@ -16,18 +16,11 @@ DEFAULT_ENGIN = create_engine(
     # echo=config.DEBUG,
 )
 
+
 DEFAULT_SESSION_FACTORY = sessionmaker(
     bind=DEFAULT_ENGIN
 )
 
-KEYCLOAK_SESSION_FACTOR = sessionmaker(
-    bind=create_engine(
-        URL.create("postgresql+psycopg2", username=config.KEYCLOAK_POSTGRES_USER,
-                   password=config.KEYCLOAK_POSTGRES_PASSWORD,
-                   host=config.KEYCLOAK_POSTGRES_HOST, port=config.KEYCLOAK_POSTGRES_PORT,
-                   database=config.KEYCLOAK_POSTGRES_DATABASE),
-    )
-)
 
 PROJECT_ROOT_DIRECTORY = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../'))
 THIS_FILE_PATH = os.path.abspath(__file__)

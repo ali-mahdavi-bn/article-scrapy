@@ -1,4 +1,4 @@
-from backbone.serviclayer.general_types import BaseEnumeration
+from backbone.service_layer.general_types import BaseEnumeration
 
 
 class KeyWordType(BaseEnumeration):
