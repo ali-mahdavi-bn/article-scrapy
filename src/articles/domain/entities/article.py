@@ -27,9 +27,9 @@ class Article(BaseEntity):
     updated_at: datetime
 
     @classmethod
-    def create(cls, data: ArticleDTO, format=None):
+    def create(cls, data: ArticleDTO, language=2, format=None):
         article = Article()
-        article.language_id=1
+        article.language_id = language
         article.format = format
         article.uuid = data.uuid
         article.link_article = data.link_article

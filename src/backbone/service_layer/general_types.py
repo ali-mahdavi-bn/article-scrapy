@@ -1,11 +1,10 @@
 from __future__ import annotations
 
 import dataclasses
-from abc import ABC, abstractmethod
 from enum import Enum
 from typing import Any, List, Optional
 
-from pydantic import BaseModel, PositiveInt
+from pydantic import BaseModel
 
 from backbone.helpers.validation import PhoneNumberValidator, PostalCodeValidator
 
@@ -27,7 +26,6 @@ class BaseEnumeration(Enum):
 
 class Command(BaseModel):
     pass
-
 
 class Event(BaseModel):
     pass

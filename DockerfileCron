@@ -1,0 +1,13 @@
+FROM python3.11_requirements-project
+
+
+ADD supervisord.conf /etc/supervisor/conf.d/
+COPY . /app
+
+ENV TESSDATA_PREFIX=/tessdata
+RUN pip install beautifulsoup4
+#USER ali_tank
+
+EXPOSE 8000
+
+CMD ["/usr/bin/supervisord"]

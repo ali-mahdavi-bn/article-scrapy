@@ -1,16 +1,19 @@
-from crawl.backbon.helpers.response import Response
-from crawl.backbon.service_layer.abstract_crawl import CrawlImp
-from src.utils.public.colors import color
+import time
+
+from crawl.backbone.helpers.response import Response
+from crawl.backbone.adapter.abstract_crawl import AbstractCrawl
+from utils.public.colors import color
 
 
-class Crawler(CrawlImp):
+class Crawler(AbstractCrawl):
+
 
     def __init__(self, lifespan=None):
-        (self.lifespan(lifespan)) if lifespan else None
+        (self._lifespan(lifespan)) if lifespan else None
 
-        self._process = True
+        self._is_crawling = True
 
-    def lifespan(self, lifespan):
+    def _lifespan(self, lifespan):
         lifespan()
 
     def _run_flow(self, request):
@@ -20,34 +23,38 @@ class Crawler(CrawlImp):
             for nf in next_flow:
                 self._run_flow(request=nf)
 
-    def start(self, spiders):
-        for request in spiders().from_crawler():
-            if not self._process:
+    def start(self, spider):
+        for request in spider().from_crawler():
+            if not self._is_crawling:
                 break
             self._run_flow(request=request)
 
-    def start_iso(self, spiders):
-        for request in spiders().from_crawler():
-            if not self._process:
+    def start_supress_error(self, spider):
+        for request in spider().from_crawler():
+            if not self._is_crawling:
                 break
             try:
                 self._run_flow(request=request)
             except Exception as e:
                 print(color.red(str(e)))
 
-    def start_worker(self, spiders, conditional_break=None):
+    def start_worker(self, spider, conditional_break=None, time_sleep_next_every_run=180):
         while True:
-            if not self._process or (conditional_break and not conditional_break()):
+            if not self._is_crawling or (conditional_break and not conditional_break()):
                 break
 
             try:
-                for request in spiders().from_crawler():
-                    if not self._process:
+                for request in spider().from_crawler():
+                    if not self._is_crawling:
                         break
-
-                    self._run_flow(request=request)
+                    if request:
+                        self._run_flow(request=request)
+                    # print("sleep time: ", time_sleep_next_every_run)
+                    # time.sleep(time_sleep_next_every_run)
             except:
                 pass
+                # print("sleep time: ", time_sleep_next_every_run)
+                # time.sleep(time_sleep_next_every_run)
 
     def stop(self):
-        self._process = False
+        self._is_crawling = False

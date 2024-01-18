@@ -11,9 +11,9 @@ class UnitOfWork(AbstractUnitOfWork):
 
     def __enter__(self) -> 'UnitOfWork':
         self.session = self.session_factory(expire_on_commit=False)  # type: Session
-        self.article = ieee_repo.ArticleRepository(self.session)
-        self.author = ieee_repo.AuthorRepository(self.session)
-        self.issn = ieee_repo.IssnRepository(self.session)
+        self.article = ieee_repo.SqlalchemyArticleRepository(self.session)
+        self.author = ieee_repo.SqlalchemyAuthorRepository(self.session)
+        self.issn = ieee_repo.SqlalchemyIssnRepository(self.session)
         return super().__enter__()
 
     def __exit__(self, *args):

@@ -23,6 +23,7 @@ def bootstrap(
         for command_type, handler in collect_handlers_functions(command_handlers).items()
     }
 
+
     return MessageBus(
         uow=uow,
         event_handlers=injected_event_handlers,

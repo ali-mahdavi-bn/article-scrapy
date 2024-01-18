@@ -3,7 +3,6 @@ from inspect import getmembers, isfunction, signature, isclass
 from types import NoneType
 from typing import Dict, Type, Any, Callable, List
 
-from dateutil.parser import parse
 
 
 def remove_none_from_dict(dictionary: dict, remove_empty_string=False):
@@ -41,16 +40,6 @@ def collect_handlers_functions(module) -> Dict[Any, Callable | List[Callable]]:
     return functions
 
 
-
-def any_to_datetime(date_or_datetime):
-    if type(date_or_datetime) == str:
-        _datetime = parse(date_or_datetime)
-    elif type(date_or_datetime) == datetime.date:
-        _datetime = datetime.datetime(date_or_datetime.year, date_or_datetime.month, date_or_datetime.day)
-    else:
-        _datetime = date_or_datetime
-
-    return _datetime
 
 
 class TimeOperation:

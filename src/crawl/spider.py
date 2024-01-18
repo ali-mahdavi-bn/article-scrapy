@@ -1,8 +1,11 @@
 from typing import Any, Self
 
-from crawl.backbon.service_layer.abstract_spider import SpiderImp
+from crawl.backbone.adapter.abstract_spider import AbstractSpider
 
 
-class Spider(SpiderImp):
-    def from_crawler(self, crawler=None, *args: Any, **kwargs: Any) -> Self:
+class Spider(AbstractSpider):
+    def start_requests(self, **kwargs) -> Self:
+        raise NotImplementedError
+
+    def from_crawler(self, crawler=None) -> Self:
         yield from self.start_requests()

@@ -4,27 +4,24 @@ from pydantic_settings import BaseSettings
 
 
 class Config(BaseSettings):
-    DEFAULT_HEADERS: dict = {
-        'User-Agent': 'MyApp/1.0',
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
-        'X-Requested-With': 'XMLHttpRequest',
-        'Custom-Header': 'CustomValue',
-        'X-Api-Version': '2.0'
-    }
 
-    PDF_WEB: str = "src/data_file/pdf_web/"
+
+    PDF_WEB: str = "data_file/pdf_web/"
 
     SCI_PATH: str = "https://sci-hub.wf/"
 
+    # postgres
     POSTGRES_USER: str = "postgres"
-    POSTGRES_PASSWORD: str = "ali3z110"
-    POSTGRES_HOST: str = "localhost"
+    POSTGRES_PASSWORD: str = "postgres"
+    POSTGRES_HOST: str = "postgres"
     POSTGRES_DATABASE: str = "postgres"
     POSTGRES_PORT: int = 5432
 
+    # minio
+    MINIO_HOST: str = "minio"
+    MINIO_PORT: str = "9000"
+    MINIO_ACCESS_KEY: str = "minio"
+    MINIO_SECRET_KEY: str = "minio"
 
     class Config:
         case_sensitive = False

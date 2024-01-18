@@ -1,10 +1,10 @@
 from __future__ import annotations
+
 import logging
 from typing import Callable, Dict, List, Union, Type, TYPE_CHECKING
 
 from .general_types import Command, Event
 from unit_of_work import UnitOfWork
-
 if TYPE_CHECKING:
     from unit_of_work import UnitOfWork
 

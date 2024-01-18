@@ -3,7 +3,7 @@ from uuid import uuid4
 
 from articles.spider.dto.article import ArticlePageDTO, DetailAuthors, DetailIssn, DetailKeyword
 from articles.spider.utils.file import save_file_in_minio
-from crawl.backbon.helpers.response import Response
+from crawl.backbone.helpers.response import Response
 
 
 def clear_data_ieee(response: Response, article_text="") -> ArticlePageDTO:
@@ -45,6 +45,8 @@ def process_data(content: str, link_article: str, content_of_article: str, respo
         for keyword in data.get("keywords", [])
         for kwd in keyword.get("kwd", [])
     ]
+    start_page = data.get("startPage")
+    end_page = data.get("endPage")
 
     path_minio = save_file_in_minio(response=response)
     detail_page = ArticlePageDTO(
@@ -55,8 +57,8 @@ def process_data(content: str, link_article: str, content_of_article: str, respo
         link_article=link_article,
         content_of_article=content_of_article,
         published_in=data.get("displayPublicationTitle"),
-        start_page=data.get("startPage"),
-        end_page=data.get("end_page"),
+        start_page=start_page if start_page and start_page.isdigit() else None,
+        end_page=end_page if end_page and end_page.isdigit() else None,
         abstract=data.get("abstract"),
         publication_date=data.get("publicationDate"),
         conf_loc=data.get("confLoc"),

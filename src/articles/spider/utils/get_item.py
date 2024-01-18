@@ -17,3 +17,5 @@ def fetch_items(page_size, page_number, entity: BaseEntity, where: str = None) -
 def fetch_article_empty_article_text(page_size, page_number):
     return fetch_items(page_size=page_size, page_number=page_number, entity=Article,
                        where="Article.content_of_article == ''")
+
+

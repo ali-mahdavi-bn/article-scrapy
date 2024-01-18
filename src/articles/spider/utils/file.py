@@ -2,9 +2,10 @@ import os
 
 from articles.spider.utils.create_file_pdf import create_file_pdf, generate_file_name_with_url
 from backbone.configs import config
-from crawl.backbon.helpers.response import Response
+from crawl.backbone.helpers.response import Response
 from marker.convert_single import load_marker
-from src.utils.minio_manager import minio_manager
+# from marker import load_marker
+from utils.public.minio_manager import minio_manager
 
 
 def generate_file_text(response: Response):
