@@ -2,10 +2,10 @@ import os
 
 from articles.spider.utils.create_file_pdf import create_file_pdf, generate_file_name_with_url
 from backbone.configs import config
-from crawl.backbone.helpers.response import Response
+from crawl.helper.helpers.response import Response
 from marker.convert_single import load_marker
 # from marker import load_marker
-from utils.public.minio_manager import minio_manager
+# from utils.public.minio_manager import minio_manager
 
 
 def generate_file_text(response: Response):
@@ -22,9 +22,9 @@ def save_file_in_minio(response: Response):
 
     pdf_directory = config.PDF_WEB
     pdf_path = os.path.join(pdf_directory, filename + ".pdf")
-    path_minio = minio_manager.upload_file("articles", filename, pdf_path)
+    # path_minio = minio_manager.upload_file("articles", filename, pdf_path)
     delete_file(filename)
-    return path_minio
+    return ""
 
 
 def delete_file(file: str) -> None:

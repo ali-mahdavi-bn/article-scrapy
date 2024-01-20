@@ -1,6 +1,6 @@
 from typing import Any, Self
 
-from crawl.backbone.adapter.abstract_spider import AbstractSpider
+from crawl.helper.adapter.abstract_spider import AbstractSpider
 
 
 class Spider(AbstractSpider):

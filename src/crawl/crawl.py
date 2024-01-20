@@ -1,8 +1,8 @@
 import time
 
-from crawl.backbone.helpers.response import Response
-from crawl.backbone.adapter.abstract_crawl import AbstractCrawl
-from utils.public.colors import color
+from backbone.infrastructure.log._logger import Logger
+from crawl.helper.adapter.abstract_crawl import AbstractCrawl
+from crawl.helper.helpers.response import Response
 
 
 class Crawler(AbstractCrawl):
@@ -23,38 +23,39 @@ class Crawler(AbstractCrawl):
             for nf in next_flow:
                 self._run_flow(request=nf)
 
-    def start(self, spider):
+    def start(self, spider, conditional_break=None):
+        Logger.info(f"starting spider {spider.__name__}")
         for request in spider().from_crawler():
-            if not self._is_crawling:
+            if conditional_break and not conditional_break():
+                Logger.info("spider break")
                 break
             self._run_flow(request=request)
 
-    def start_supress_error(self, spider):
+    def start_supress_error(self, spider, conditional_break=None):
+        Logger.info(f"starting spider {spider.__name__}")
+
         for request in spider().from_crawler():
-            if not self._is_crawling:
+            if conditional_break and not conditional_break():
+                Logger.info("spider break")
                 break
             try:
                 self._run_flow(request=request)
             except Exception as e:
-                print(color.red(str(e)))
+                Logger.info(f"Spider Error: {e}")
 
     def start_worker(self, spider, conditional_break=None, time_sleep_next_every_run=180):
         while True:
-            if not self._is_crawling or (conditional_break and not conditional_break()):
+            Logger.info("worker running...")
+            if conditional_break and not conditional_break():
+                Logger.info("worker break...")
                 break
 
             try:
+                Logger.info(f"execute spider {spider.__name__}")
                 for request in spider().from_crawler():
-                    if not self._is_crawling:
-                        break
                     if request:
                         self._run_flow(request=request)
-                    # print("sleep time: ", time_sleep_next_every_run)
-                    # time.sleep(time_sleep_next_every_run)
-            except:
-                pass
-                # print("sleep time: ", time_sleep_next_every_run)
-                # time.sleep(time_sleep_next_every_run)
-
-    def stop(self):
-        self._is_crawling = False
+                    time.sleep(time_sleep_next_every_run)
+            except Exception as e:
+                Logger.info(f"Worker Error: {e}")
+                time.sleep(time_sleep_next_every_run)

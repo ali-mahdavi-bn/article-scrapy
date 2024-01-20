@@ -18,10 +18,10 @@ class Config(BaseSettings):
     POSTGRES_PORT: int = 5432
 
     # minio
-    MINIO_HOST: str = "minio"
-    MINIO_PORT: str = "9000"
-    MINIO_ACCESS_KEY: str = "minio"
-    MINIO_SECRET_KEY: str = "minio"
+    # MINIO_HOST: str = "minio"
+    # MINIO_PORT: str = "9000"
+    # MINIO_ACCESS_KEY: str = "minio"
+    # MINIO_SECRET_KEY: str = "minio"
 
     class Config:
         case_sensitive = False

@@ -2,7 +2,7 @@ import time
 from typing import Optional
 from backbone.configs import config
 
-from crawl.backbone.helpers.response import Response
+from crawl.helper.helpers.response import Response
 
 
 def find_url_pdf_sci(response: Response) -> Optional[str]:

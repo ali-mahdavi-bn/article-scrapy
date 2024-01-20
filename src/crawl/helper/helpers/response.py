@@ -4,8 +4,8 @@ from typing import Optional, Any
 
 from bs4 import BeautifulSoup
 
-from crawl.backbone.helpers.requests import RequestArgs
-from utils.public.colors import color
+from backbone.infrastructure.log._logger import Logger
+from crawl.helper.helpers.requests import RequestArgs
 
 
 @dataclass
@@ -55,15 +55,12 @@ class Response:
         raise ValueError("fail requested")
 
     def _print_successfully(self):
-        print()
-        print(color.green("request successfully url:"), color.black(self._response_get.url), " | status:", color.green(
-            self._response_get.status_code))
+        Logger.info(f"request successfully url: {self._response_get.url} | status: {self._response_get.status_code}")
+
 
     def _print_warning(self, e):
-        print()
-        print(
-            color.yellow(f"fail count: {self._count_fail_request}  reference: {e.args if hasattr(e, 'args') else e}")
-        )
+        Logger.warning(f"fail count: {self._count_fail_request}  reference: {e.args if hasattr(e, 'args') else e}")
+
 
     def css(self, css_selector: str):
         self._css_selector = True

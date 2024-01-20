@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 from backbone.configs import config
-from crawl.backbone.helpers.response import Response
+from crawl.helper.helpers.response import Response
 
 
 def create_file_pdf(response: Response, filename: str) -> str:

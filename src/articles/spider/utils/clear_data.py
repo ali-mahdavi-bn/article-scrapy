@@ -3,7 +3,7 @@ from uuid import uuid4
 
 from articles.spider.dto.article import ArticlePageDTO, DetailAuthors, DetailIssn, DetailKeyword
 from articles.spider.utils.file import save_file_in_minio
-from crawl.backbone.helpers.response import Response
+from crawl.helper.helpers.response import Response
 
 
 def clear_data_ieee(response: Response, article_text="") -> ArticlePageDTO:
@@ -52,7 +52,7 @@ def process_data(content: str, link_article: str, content_of_article: str, respo
     detail_page = ArticlePageDTO(
         uuid=uuid_article,
         title=data.get("title"),
-        path=path_minio,
+        path="",
         date_of_conference=data.get("displayPublicationDate"),
         link_article=link_article,
         content_of_article=content_of_article,

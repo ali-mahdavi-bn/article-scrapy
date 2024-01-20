@@ -1,8 +1,8 @@
 from articles.spider.utils.file import generate_file_text
 from articles.spider.utils.get_item import fetch_article_empty_article_text
 from articles.spider.utils.url import add_url_sci, find_url_pdf_sci
-from crawl.backbone.helpers.requests import RequestArgs
-from crawl.backbone.helpers.response import Response
+from crawl.helper.helpers.requests import RequestArgs
+from crawl.helper.helpers.response import Response
 from crawl.spider import Spider
 from unit_of_work import UnitOfWork
 
