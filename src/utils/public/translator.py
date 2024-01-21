@@ -38,4 +38,7 @@ class _Translator:
         return translated_text
 
 
+proxies = {
+    'http': f'4c79f152-ef9f-421c-b0c1-3f6cb4c3b8cd.hsvc.ir:31633'
+}
 Translator = _Translator(translator=translator_moduls())

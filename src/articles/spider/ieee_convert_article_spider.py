@@ -23,17 +23,18 @@ class IeeeConvertArticleSpider(Spider):
             if not articles:
                 break
 
+            request = RequestArgs(
+                callback=self.parse,
+            )
 
+            request.add_proxy("4c79f152-ef9f-421c-b0c1-3f6cb4c3b8cd.hsvc.ir:31633")
             for article in articles:
                 url = add_url_sci(url=article.link_article)
-                request = RequestArgs(
-                    url=url,
-                    callback=self.parse,
-                    meta={'articles': article}
-                )
+                request.add_url(url)
+
+                request.add_meta('articles', article)
                 yield request
-        yield
-        # raise ValueError("not article ")
+
     def parse(self, response: Response):
         self._ieee_response = response
         self.article = response.meta["articles"]

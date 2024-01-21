@@ -2,6 +2,7 @@ import time
 from typing import List
 
 from articles.domain.entities import Article
+from backbone.infrastructure.log._logger import Logger
 from constant import Language
 from unit_of_work import UnitOfWork
 from utils.public.translator import Translator
@@ -47,17 +48,16 @@ def article_translate_to_fa_worker():
             while True:
                 try:
                     articles = _get_articles_and_translating_long_text(uow)
-                    uow.session.bulk_save_objects(articles)
-                    uow.commit()
-                    print("sleep time",300)
+                    if articles:
+                        uow.session.bulk_save_objects(articles)
+                        uow.commit()
                     time.sleep(300)
                 except:
-                    print("sleep time",300)
                     time.sleep(300)
 
 
     except Exception as e:
-        print(e)
+        Logger.info(e)
         uow.session.rollback()
         # time.sleep(300)
 

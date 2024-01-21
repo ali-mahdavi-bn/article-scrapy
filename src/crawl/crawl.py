@@ -9,6 +9,7 @@ class Crawler(AbstractCrawl):
 
 
     def __init__(self, lifespan=None):
+
         (self._lifespan(lifespan)) if lifespan else None
 
         self._is_crawling = True
@@ -43,9 +44,9 @@ class Crawler(AbstractCrawl):
             except Exception as e:
                 Logger.info(f"Spider Error: {e}")
 
-    def start_worker(self, spider, conditional_break=None, time_sleep_next_every_run=180):
+    def start_worker(self, spider, conditional_break=None, time_sleep_next_every_run=300):
+        Logger.info("worker running...")
         while True:
-            Logger.info("worker running...")
             if conditional_break and not conditional_break():
                 Logger.info("worker break...")
                 break

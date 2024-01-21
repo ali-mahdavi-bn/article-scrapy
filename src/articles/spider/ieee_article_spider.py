@@ -16,7 +16,6 @@ class IeeeArticleSpider(Spider):
         self.is_get_max_id_article = False
 
     def start_requests(self, **kwargs):
-        print("aaaaaaa")
         request_args = RequestArgs(callback=self.parse)
         max_id_article_in_db = self._get_max_id_article_in_db()
         min_article_id = int(max_id_article_in_db) if max_id_article_in_db else 6000306

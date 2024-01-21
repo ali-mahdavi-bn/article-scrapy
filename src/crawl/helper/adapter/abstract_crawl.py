@@ -9,5 +9,3 @@ class AbstractCrawl(ABC):
     @abstractmethod
     def start(self,spider): pass
 
-    @abstractmethod
-    def stop(self): pass

@@ -8,4 +8,7 @@ class Spider(AbstractSpider):
         raise NotImplementedError
 
     def from_crawler(self, crawler=None) -> Self:
-        yield from self.start_requests()
+        try:
+            yield from self.start_requests()
+        except:
+            yield []

@@ -2,6 +2,7 @@ import os
 
 from articles.spider.utils.create_file_pdf import create_file_pdf, generate_file_name_with_url
 from backbone.configs import config
+from backbone.infrastructure.log._logger import Logger
 from crawl.helper.helpers.response import Response
 from marker.convert_single import load_marker
 # from marker import load_marker
@@ -30,6 +31,6 @@ def save_file_in_minio(response: Response):
 def delete_file(file: str) -> None:
     try:
         os.remove(config.PDF_WEB + f"{file}.pdf")
-        print(f"The file '{file}' has been deleted successfully.")
+        Logger.inf(f"The file '{file}' has been deleted successfully.")
     except:
         pass
