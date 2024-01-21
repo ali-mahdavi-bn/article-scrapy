@@ -10,5 +10,6 @@ class Spider(AbstractSpider):
     def from_crawler(self, crawler=None) -> Self:
         try:
             yield from self.start_requests()
-        except:
+        except Exception as e:
+            print(str(e))
             yield []

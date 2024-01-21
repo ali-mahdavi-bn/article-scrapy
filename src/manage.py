@@ -12,7 +12,7 @@ CommandArgument = Dict[str, Any]
 
 def lifspan():
     start_mapper()
-    MAPPER_REGISTRY.metadata.create_all(DEFAULT_ENGIN)
+    # MAPPER_REGISTRY.metadata.create_all(DEFAULT_ENGIN)
 
 
 def convert_argument_list_to_dict(argument_list: list[str]) -> CommandArgument:
@@ -31,8 +31,6 @@ def inject_command_to_bus(command_obj: Callable, command_argument: CommandArgume
 
 def loop_in_commands(module, command_argument: CommandArgument, target_class_name: str) -> None:
     for name_command, command_obj in getmembers(module.domain.commands, isclass):
-        print("kjn", target_class_name, name_command)
-        print("kjn", target_class_name == name_command)
 
         if target_class_name == name_command:
             inject_command_to_bus(command_obj, command_argument)

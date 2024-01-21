@@ -22,5 +22,12 @@
       <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="article@03cc3f44-a418-4424-9010-9541d66191a8.hsvc.ir" uuid="312b8cef-a6d6-4a37-ad84-c620517cdbb5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://03cc3f44-a418-4424-9010-9541d66191a8.hsvc.ir:32569/article</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

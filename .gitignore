@@ -3,3 +3,6 @@ venv/
 *.json
 data/
 .env
+.idea
+.idea/
+a.json
