@@ -42,24 +42,17 @@ def _get_articles_and_translating_long_text(uow: UnitOfWork) -> List[Article]:
 
 def article_translate_to_fa_worker():
     uow = UnitOfWork()
-    try:
-
-        with uow:
-            while True:
-                try:
-                    articles = _get_articles_and_translating_long_text(uow)
-                    if articles:
-                        uow.session.bulk_save_objects(articles)
-                        uow.commit()
-                    time.sleep(300)
-                except:
-                    time.sleep(300)
-
-
-    except Exception as e:
-        Logger.info(e)
-        uow.session.rollback()
-        # time.sleep(300)
-
-    finally:
-        uow.session.close()
+    while True:
+        try:
+            with uow:
+                articles = _get_articles_and_translating_long_text(uow)
+                print(articles)
+                if articles:
+                    uow.session.bulk_save_objects(articles)
+                    uow.commit()
+            time.sleep(300)
+        except Exception as e:
+            Logger.info(e)
+            uow.session.rollback()
+            uow.session.close()
+            time.sleep(300)
